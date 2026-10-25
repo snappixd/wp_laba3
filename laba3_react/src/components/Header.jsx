@@ -12,7 +12,7 @@ function Header() {
         <p>Location: Lviv, Ukraine</p>
       </address>
 
-      <nav className="w-full max-w-lg">
+      <nav className="w-full max-w-lg  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 active:bg-orange-500/20">
         <h2 className="text-center text-zinc-500 uppercase tracking-widest text-sm mb-4 font-semibold">Links</h2>
         <ul className="flex flex-wrap justify-center gap-4">
           <li><a href="https://www.linkedin.com/in/andrii-levin-746b03359/" className="px-4 py-2 border border-zinc-700 rounded-md text-zinc-400 hover:border-orange-500 hover:text-orange-500 transition-all duration-300">Linkedin</a></li>

@@ -28,6 +28,15 @@ a[target="_blank"]:hover {
     text-shadow: 0 0 8px #00ff00;
 }
 
+a[target="_blank"]:active {
+    color: #ffffff;
+}
+
+a:focus-visible {
+    outline: 2px solid #00ff00;
+    outline-offset: 3px;
+}
+
 .header-section {
     text-align: center;
     margin-bottom: 40px;
@@ -69,6 +78,12 @@ a[target="_blank"]:hover {
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 255, 0, 0.05);
     border-radius: 4px;
+    transition: box-shadow 0.2s ease-in-out, border-left-color 0.2s ease-in-out;
+}
+
+.cyber-card:hover {
+    border-left-color: #58a6ff;
+    box-shadow: 0 5px 20px rgba(0, 255, 0, 0.15);
 }
 
 .cyber-card h2 {
@@ -80,6 +95,10 @@ a[target="_blank"]:hover {
 .cyber-card ul {
     list-style: square;
     padding-left: 20px;
+}
+
+.cyber-card ul:not(.timeline) li:nth-child(odd) {
+    color: #e6edf3;
 }
 
 .timeline {
@@ -104,6 +123,10 @@ a[target="_blank"]:hover {
     background-color: #00ff00;
     border-radius: 50%;
     box-shadow: 0 0 5px #00ff00;
+}
+
+.timeline li:last-child {
+    margin-bottom: 0;
 }
 
 .highlight {
